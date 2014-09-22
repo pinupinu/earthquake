@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Earth Quake</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>        
+    <link rel="stylesheet" href="theme/ex1.min.css" />
+    <!-- Include the jQuery library (local or CDN) -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Include the plugin *after* the jQuery library -->
+<script src="bjqs.min.js"></script>
+
+<!-- Include the basic styles -->
+<link type="text/css" rel="Stylesheet" href="bjqs.css" />
+jQuery(document).ready(function($) {
+    $('#banner-fade').bjqs({
+        'height' : 320,
+        'width' : 620,
+        'responsive' : true
+    });
+});
+</head>
+
+<body>
+
+<!-- Start of  page HOME  -->
+<div data-role="page" id="page_home">
+
+	<div data-role="header">
+	  <h1>Earthquake Checker</h1>
+  </div><!-- /header -->
+
+	<div data-role="content">
+    
+        <ul data-role="listview" data-inset="false" data-icon="false">
+                  
+            <li><a href="page_1.html">  
+              <img src="js/mobile/1.4.2/images/1.gif">Feeds &amp; Maps</a> </li> 
+         
+            <li><a href="page_2.html">  
+                <img src="js/mobile/1.4.2/images/2.gif">Statistics Earthquake</a> 
+            </li> 
+            
+            <li><a href="page_3.html">
+            <img src="js/mobile/1.4.2/images/2.gif">How to protect yourself</a> 
+            </li>
+        </ul>
+</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed"id="my-slideshow">
+    <ul class="bjqs">
+        <li><!-- Any content you like --></li>
+        <li><!-- Can go inside these slides--></li>
+    </ul>>
+    <h1>University of thai chamber of commerce</h1>
+  </div>
+            
+        </ul>
+</div><!-- /panel footer--> 
+ </div>
+
+	
+</body>
+</html>

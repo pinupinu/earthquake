@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Earth Quake</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>        
+    <link rel="stylesheet" href="theme/ex1.min.css" />
+    
+</head>
+<body>
+<div data-role="page" id="page_3-1">
+<div data-role="header">
+		<h1>How to protect yourself from earthquake</h1>
+		<a href="index.php" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>	
+		</div><!-- /header -->
+		
+		<div data-role="main" class="ui-content">
+    
+    
+   </div>
+		 
+		 
+		 <div data-role="footer" data-position="fixed">
+  
+  <div data-role="navbar" >
+            <ul>
+                <li><a href="page_3"  data-icon="heart">title</a></li>
+                <li><a href="page_3-1" class="ui-btn-active" data-icon="heart"> 2</a></li>
+                <li><a href="page_3-2" data-icon="heart">3</a></li>
+                <li><a href="page_3-3" data-icon="heart">3</a></li>
+                
+            </ul>
+        </div><!-- /navbar -->     
+        <h1>Footer Text</h1>   
+  </div>
+
+</body>
+</html>
