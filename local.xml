@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers>
+  <marker id="1">
+    <name>กรุงเทพมหานคร</name>
+    <latitude>13.7234186</latitude>
+    <longitude>100.4762319</longitude>
+  </marker>
+  <marker id="2">
+    <name>กระบี่</name>
+    <latitude>8.1191811</latitude>
+    <longitude>99.1013498</longitude>
+  </marker>
+  <marker id="3">
+    <name>กาญจนบุรี</name>
+    <latitude>14.6701192</latitude>
+    <longitude>99.0128926</longitude>
+  </marker>
+</markers>
