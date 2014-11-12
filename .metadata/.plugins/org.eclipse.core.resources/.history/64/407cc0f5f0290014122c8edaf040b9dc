@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Earth Quake</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>    
+</head>
+
+<body>
+
+<!-- Start of  page HOME  -->
+<div data-role="page" id="page_home">
+
+	<div data-role="header">
+		<a href="#left_panel" class="ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-notext">Bars</a>
+		<h1>Earth Quake</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    
+        <ul data-role="listview" data-inset="false" data-icon="false">
+                  
+            <li><a href="page_1">  
+                <img src="js/mobile/1.4.2/images/1.gif"></a>
+            </li> 
+         
+            <li><a href="page_2">  
+                <img src="js/mobile/1.4.2/images/2.gif"></a> 
+            </li> 
+        
+            
+        </ul>
+    </div><!-- /content -->
+	
+	<div data-role="panel" id="left_panel" data-display="push">
+	       <ul data-role="listview" data-icon="false"  data-divider-theme="a">
+            <li data-role="list-divider">setting</li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            
+        </ul>
+    </div><!-- /panel footer-->        
+	
+    
+</div>
+
+</body>
+</html>

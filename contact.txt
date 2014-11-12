@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contacts>
+  <contacts id="1">
+    <name>กรมอุคุนิยมวิทยา</name>
+    <number>1182</number>
+    <image>กรมอุตุ.jpg</image>
+  </contacts>
+  <contacts id="2">
+    <name>ศูนย์เตือนภัยพิบัติแห่งชาติ.</name>
+    <number>192</number>
+    <image>ศูนย์เตือนภัย.jpg</image>
+  </contacts>
+  <contacts id="3">
+    <name>การป้องกันและบรรเทาสาธารณภัย</name>
+    <number>1784</number>
+    <image>การป้องกันและบรรเทา.jpg</image>
+  </contacts>
+  <contacts id="4">
+    <name>สถาบันการแพทย์ฉุนเฉินแห่งชาติ</name>
+    <number>1669</number>
+    <image>สถาบันการแพทย์.jpg</image>
+  </contacts>
+  <contacts id="5">
+    <name>ตำรวจ</name>
+    <number>191</number>
+    <image>ตำรวจ.jpg</image>
+  </contacts>
+</contacts>
+ 

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><!-- Start of  page ABOUT US  -->
+<head>
+    <title>Earth Quake</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="page_1">
+
+	<div data-role="header">
+		<h1>About Us</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+
+        <script type="text/javascript">
+$(function(){
+
+/*	แสดงแผนที่ เมื่อมีการเปิดไปหน้า แผนที่ อ้างอิง id เพจ map-map*/
+	$( document ).on( "pageinit", "page_1", function() { // เมื่อเริ่มต้นแสดงหน้า แผนที่
+		setTimeout(function(){ // ตั้งเวลาหน่วง หรือ delay การเรียกใช้งาน ฟังก์ชั่นแสดงแผนที่
+		initialize();	// ฟังก์ชั่นแสดงแผนที่		
+		},3000); // กำหนดเวลาหน่วง 3 วินาที่ , 1000 เท่ากับ 1 วินาที
+	});	
+
+});
+</script>
+<script type="text/javascript">
+var map; // กำหนดตัวแปร map ไว้ด้านนอกฟังก์ชัน เพื่อให้สามารถเรียกใช้งาน จากส่วนอื่นได้    
+var GGM; // กำหนดตัวแปร GGM ไว้เก็บ google.maps Object จะได้เรียกใช้งานได้ง่ายขึ้น    
+// ฟังก์ชันสำหรับสร้างแผนที่ ใช้ชื่อว่า initialize()  
+function initialize() { // ฟังก์ชันแสดงแผนที่    
+    GGM=new Object(google.maps); // เก็บตัวแปร google.maps Object ไว้ในตัวแปร GGM    
+    // กำหนดจุดเริ่มต้นของแผนที่    
+    var my_Latlng  = new GGM.LatLng(13.761728449950002,100.6527900695800);    
+    var my_mapTypeId=GGM.MapTypeId.ROADMAP; // กำหนดรูปแบบแผนที่ที่แสดง    
+    // กำหนด DOM object ที่จะเอาแผนที่ไปแสดง ที่นี้คือ div id=map_canvas    
+    var my_DivObj=$("#map_canvas")[0];     
+    // กำหนด Option ของแผนที่    
+    var myOptions = {    
+        zoom: 13, // กำหนดขนาดการ zoom    
+        center: my_Latlng , // กำหนดจุดกึ่งกลาง    
+        mapTypeId:my_mapTypeId // กำหนดรูปแบบแผนที่    
+    };    
+    map = new GGM.Map(my_DivObj,myOptions);// สร้างแผนที่และเก็บตัวแปรไว้ในชื่อ map    
+    
+    
+    
+    // เรียกใช้คุณสมบัติ ระบุตำแหน่ง ของ html 5 ถ้ามี    
+    if(navigator.geolocation){    
+            navigator.geolocation.getCurrentPosition(function(position){    
+                var pos = new GGM.LatLng(position.coords.latitude,position.coords.longitude);    
+                var infowindow = new GGM.InfoWindow({    
+                    map: map,    
+                    position: pos,    
+                    content: "คุณอยู่ที่นี่."    
+                });    
+                    
+                var my_Point = infowindow.getPosition();  // หาตำแหน่งของตัว marker เมื่อกดลากแล้วปล่อย    
+                map.panTo(my_Point);  // ให้แผนที่แสดงไปที่ตัว marker                
+                map.setCenter(pos);    
+            },function() {    
+                // คำสั่งทำงาน ถ้า ระบบระบุตำแหน่ง geolocation ผิดพลาด หรือไม่ทำงาน    
+            });    
+    }else{    
+         // คำสั่งทำงาน ถ้า บราวเซอร์ ไม่สนับสนุน ระบุตำแหน่ง    
+    }    
+  
+}    
+</script>
+        
+	</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<h4>ส่วน  footer ใส่ตามใจชอบ</h4>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+</html>

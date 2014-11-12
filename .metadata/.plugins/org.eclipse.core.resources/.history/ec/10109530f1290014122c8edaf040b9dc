@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Earth Quake</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="js/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>    
+<!--    เรียกใช้ google map ไลบรารี่ -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+	<style type="text/css">
+/*	กำหนด css แสดง แผนที่*/
+    div#map_canvas{    
+        margin:auto;    
+        width:100%;    
+        height:300px;    
+        overflow:hidden;    
+    }    
+    </style>        
+</head>
+
+<body>
+
+<!-- Start of  page HOME  -->
+<div data-role="page" id="page_home">
+
+	<div data-role="header">
+		<a href="#left_panel" class="ui-btn ui-shadow ui-corner-all ui-icon-gear ui-btn-icon-notext">Bars</a>
+		<h1>Earth Quake</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    
+        <ul data-role="listview" data-inset="false" data-icon="false">
+                  
+            <li><a href="page_1">  
+                <img src="js/mobile/1.4.2/images/1.gif"></a>
+            </li> 
+         
+            <li><a href="page_2">  
+                <img src="js/mobile/1.4.2/images/2.gif"></a> 
+            </li> 
+             
+        </ul>
+    </div><!-- /content -->
+	
+	<div data-role="panel" id="left_panel" data-display="push">
+	       <ul data-role="listview" data-icon="false"  data-divider-theme="a">
+            <li data-role="list-divider">setting</li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            
+        </ul>
+    </div><!-- /panel footer-->        
+	
+    
+</div><!-- /page -->
+
+<script type="text/javascript">
+$(function(){
+
+/*	แสดงแผนที่ เมื่อมีการเปิดไปหน้า แผนที่ อ้างอิง id เพจ map-map*/
+	$( document ).on( "pageinit", "#map-page", function() { // เมื่อเริ่มต้นแสดงหน้า แผนที่
+		setTimeout(function(){ // ตั้งเวลาหน่วง หรือ delay การเรียกใช้งาน ฟังก์ชั่นแสดงแผนที่
+		initialize();	// ฟังก์ชั่นแสดงแผนที่		
+		},3000); // กำหนดเวลาหน่วง 3 วินาที่ , 1000 เท่ากับ 1 วินาที
+	});	
+
+});
+</script>
+<script type="text/javascript">
+var map; // กำหนดตัวแปร map ไว้ด้านนอกฟังก์ชัน เพื่อให้สามารถเรียกใช้งาน จากส่วนอื่นได้    
+var GGM; // กำหนดตัวแปร GGM ไว้เก็บ google.maps Object จะได้เรียกใช้งานได้ง่ายขึ้น    
+// ฟังก์ชันสำหรับสร้างแผนที่ ใช้ชื่อว่า initialize()  
+function initialize() { // ฟังก์ชันแสดงแผนที่    
+    GGM=new Object(google.maps); // เก็บตัวแปร google.maps Object ไว้ในตัวแปร GGM    
+    // กำหนดจุดเริ่มต้นของแผนที่    
+    var my_Latlng  = new GGM.LatLng(13.761728449950002,100.6527900695800);    
+    var my_mapTypeId=GGM.MapTypeId.ROADMAP; // กำหนดรูปแบบแผนที่ที่แสดง    
+    // กำหนด DOM object ที่จะเอาแผนที่ไปแสดง ที่นี้คือ div id=map_canvas    
+    var my_DivObj=$("#map_canvas")[0];     
+    // กำหนด Option ของแผนที่    
+    var myOptions = {    
+        zoom: 13, // กำหนดขนาดการ zoom    
+        center: my_Latlng , // กำหนดจุดกึ่งกลาง    
+        mapTypeId:my_mapTypeId // กำหนดรูปแบบแผนที่    
+    };    
+    map = new GGM.Map(my_DivObj,myOptions);// สร้างแผนที่และเก็บตัวแปรไว้ในชื่อ map    
+    
+    
+    
+    // เรียกใช้คุณสมบัติ ระบุตำแหน่ง ของ html 5 ถ้ามี    
+    if(navigator.geolocation){    
+            navigator.geolocation.getCurrentPosition(function(position){    
+                var pos = new GGM.LatLng(position.coords.latitude,position.coords.longitude);    
+                var infowindow = new GGM.InfoWindow({    
+                    map: map,    
+                    position: pos,    
+                    content: "คุณอยู่ที่นี่."    
+                });    
+                    
+                var my_Point = infowindow.getPosition();  // หาตำแหน่งของตัว marker เมื่อกดลากแล้วปล่อย    
+                map.panTo(my_Point);  // ให้แผนที่แสดงไปที่ตัว marker                
+                map.setCenter(pos);    
+            },function() {    
+                // คำสั่งทำงาน ถ้า ระบบระบุตำแหน่ง geolocation ผิดพลาด หรือไม่ทำงาน    
+            });    
+    }else{    
+         // คำสั่งทำงาน ถ้า บราวเซอร์ ไม่สนับสนุน ระบุตำแหน่ง    
+    }    
+  
+}    
+</script>
+
+</body>
+</html>

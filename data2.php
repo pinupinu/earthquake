@@ -44,7 +44,7 @@ body {
 	</ul>
 </div>
 </div>
-  <div id="map_canvas"></div>
+  <div id="map_canvas">
  
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
 <script type="text/javascript">
@@ -104,6 +104,7 @@ $(function(){
 	}).appendTo("body");	
 });
 </script>
+</div>
 <div data-role="footer" data-position="fixed">
     <h1>University of thai chamber of commerce</h1>
   </div>

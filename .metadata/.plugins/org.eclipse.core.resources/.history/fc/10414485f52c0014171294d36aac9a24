@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<style type="text/css">
+#pageone .ui-content p {
+	font-family: Tahoma, Geneva, sans-serif;
+}
+</style>
+</head>
+<body>
+<div data-role="page" id="pageone">
+  <div data-role="header"><a href="index.php" class="ui-btn ui-shadow ui-corner-all ui-icon-home ui-btn-icon-notext">Home</a>	
+    <h1>How to protect yourself from earthquake</h1>
+  </div>
+
+   <div data-role="main" class="ui-content">
+    <p><font color="black">During earthquakes, drop to the floor, take cover under a sturdy desk or table, and hold on to it firmly. Be prepared to move with it until the shaking stops. The area near the exterior walls of a building is the most dangerous place to be. Windows, facades and architectural details are often the first parts of the building to collapse. To stay away from this danger zone, stay inside if you are inside and outside if you are outside.</font>     </p>
+    
+  </div>
+  <object width='477' height='355' hspace="50" align="absmiddle">
+     <param name='movie' value='http://www.youtube.com/v/j8mUZFeMwhE'>
+     <param name='wmode' value='transparent'>
+     <embed src='http://www.youtube.com/v/j8mUZFeMwhE' width='477' height='355' hspace="50" align="absmiddle" type='application/x-shockwave-flash' wmode='transparent'> </embed>
+  </object>
+  <div data-role="footer" data-position="fixed">
+  
+  <div data-role="navbar" >
+            <ul>
+                <li><a href="page_3" class="ui-btn-active"  data-icon="heart">title</a></li>
+                <li><a href="page_3-1" data-icon="heart"> 2</a></li>
+                <li><a href="page_3-2" data-icon="heart">3</a></li>
+                <li><a href="page_3-3" data-icon="heart">3</a></li>
+                
+            </ul>
+        </div><!-- /navbar -->     
+        <h1>Footer Text</h1>   
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -6,40 +6,11 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 		<title>Earth Quake</title>
 		<link rel="stylesheet" href="themes/Bootstrap.css">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
 		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
-    
-        <style>
-     html, body, #map-canvas {
-        height: 100%;
-        margin: auto;
-        padding: 0px
-		width: 800px;  
-    height: 500px;  
-      }
-    </style>
-    
-	</head>
-	<body>
-		
-			<div data-role="header" data-position="inline">
-				<h1>Earthquake Checker</h1>
-				<div data-role="navbar">
-					<ul>
-						
-						<li><a class="ui-btn-active" data-icon="star">ข่าว & แผนที่</a></li>
-						<li><a href="index1.php" data-icon="info">สถิติแผ่นดินไหว(ประเทศไทย)</a></li>
-						<li><a href="index2.html" data-icon="search">วิธีปฏิบัติตัวขณะเกิดแผ่นดินไหว</a></li>
-						<li><a href="index3.html" data-icon="gear">ตั้งค่า</a></li>
-					</ul>
-
-				</div>
-			</div>
- 
-	<div id="map-canvas"></div>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
 function initialize() {
   var myLatlng = new google.maps.LatLng(49.496675,-102.65625);
@@ -59,7 +30,36 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-    </script> 
+    </script>
+        <style>
+     html, body, #map-canvas {
+        height: 100%;
+        margin: auto;
+        padding: 0px
+		width: 1350px;  
+    height: 550px;  
+      }
+    </style>
+    
+	</head>
+	<body>
+		
+			<div data-role="header" data-position="inline">
+				<h1>Earthquake Checker</h1>
+				<div data-role="navbar">
+					<ul>
+						
+						<li><a class="ui-btn-active" data-icon="star">ข่าว & แผนที่</a></li>
+						<li><a href="index1.html" data-icon="info">สถิติแผ่นดินไหว(ประเทศไทย)</a></li>
+						<li><a href="index2.html" data-icon="search">วิธีปฏิบัติตัวขณะเกิดแผ่นดินไหว</a></li>
+						<li><a href="index3.html" data-icon="gear">ตั้งค่า</a></li>
+					</ul>
+
+				</div>
+			</div>
+ 
+	<div id="map-canvas"></div>
+ 
 			
 		
         <div data-role="footer" data-position="fixed">
