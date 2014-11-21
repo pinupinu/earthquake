@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>โทรฉุกเฉิน</title>
+		<link rel="stylesheet" href="themes/Bootstrap.css">
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+       <script>
+	  function myFunction() {
+	   if (window.DeviceMotionEvent == undefined) {
+        //No accelerometer is present. Use buttons. 
+        alert("no accelerometer");
+    }
+    else {
+        alert("accelerometer found");
+        window.addEventListener("devicemotion", accelerometerUpdate, true);
+    }
+	function accelerometerUpdate(e) {
+   var aX = event.accelerationIncludingGravity.x*1;
+   var aY = event.accelerationIncludingGravity.y*1;
+   var aZ = event.accelerationIncludingGravity.z*1;
+   alert(aX,aY,aZ);
+   
+}
+	  }
+	   </script>
+	</head>
+	<body>
+		
+<div data-role="header" data-position="inline">
+				<h1>Earthquake Checker</h1>
+<div data-role="navbar">
+<ul>
+						
+<li><a href="index.html" data-icon="star">ข่าว & แผนที่</a></li>
+<li><a href="index1.html" data-icon="info">สถิติแผ่นดินไหว(ประเทศไทย)</a></li>
+<li><a href="index2.html" data-icon="user">วิธีปฏิบัติตัวขณะเกิดแผ่นดินไหว</a></li>
+<li><a class="ui-btn-active" data-icon="alert">โทรฉุกเฉิน</a></li>
+
+</ul>
+</div>
+	</div>
+    
+    
+			<div data-role="content" data-theme="a">
+
+  
+    <h2>แจ้งเหตุฉุกเฉิน:</h2>
+    <ul data-role="listview">
+    <li><a href="tel:+661669"><img src="สถาบันการแพทย์.jpg" width="100">สถาบันการแพทย์ฉุนเฉินแห่งชาติ</a></li>
+      <li><a href="tel:+66191"><img src="ตำรวจ.jpg" width="100">ติดต่อตำรวจ</a></li>
+      <li><a href="tel:+661182"><img src="กรมอุตุนิยมวิทยา.jpg" width="100">กรมอุตุนิยมวิทยา</a></li>
+      <li><a href="tel:+66192"><img src="ศูนย์เตือนภัย.jpg" width="100">ศูนย์เตือนภัยพิบัติแห่งชาติ</a></li>
+      <li><a href="tel:+661784"><img src="การป้องกันและบรเทา.jpg" width="100">กรมป้องกันและบรรเทาสาธารณภัย</a></li>
+      <button onClick="myFunction()"><img src="Attention.png" width="100">Earthquake Trembler</button>
+    </ul>
+		
+  
+
+
+			
+		</div>
+        <div data-role="footer" data-position="fixed">
+    <h1>University of thai chamber of commerce</h1>
+  </div>
+	</body>
+</html>

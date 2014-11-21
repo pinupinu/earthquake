@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<markers>
+  <marker id="1">
+    <name>น่าน</name>
+    <latitude>18.40</latitude>
+    <longitude>100.77</longitude>
+    <date>24 พฤษภาคม 2557  10.12 </date>
+    <Richter>3.6</Richter> 
+  </marker>
+  <marker id="2">
+    <name>เชียงราย</name>
+    <latitude>19.75</latitude>
+    <longitude>99.69</longitude>
+    <date>5 พฤษภาคม 2557  18.08 </date>
+    <Richter>6.3</Richter> 
+  </marker>
+  <marker id="3">
+    <name>พะเยา</name>
+    <latitude>19.04</latitude>
+    <longitude>99.96</longitude>
+    <date>1 ธันวาคม 2556  00.37 </date>
+    <Richter>3.2</Richter> 
+  </marker>
+  <marker id="4">
+    <name>เชียงใหม่</name>
+    <latitude>19.32</latitude>
+    <longitude>99.24</longitude>
+    <date>11 ตุลาคม 2556  01.19 </date>
+    <Richter>4.1</Richter> 
+  </marker>
+  <marker id="5">
+    <name>เชียงราย</name>
+    <latitude>20.23</latitude>
+    <longitude>99.95</longitude>
+    <date>20 กันยายน 2556 17.05 </date>
+    <Richter>2.4</Richter> 
+  </marker>
+  <marker id="6">
+    <name>พะเยา</name>
+    <latitude>19.29</latitude>
+    <longitude>99.84</longitude>
+    <date>1 สิงหาคม 2556 03.42 </date>
+    <Richter>3.7</Richter>
+  </marker>
+  <marker id="7">
+    <name>เชียงใหม่</name>
+    <latitude>18.61</latitude>
+    <longitude>98.56</longitude>
+    <date>7 มิถุนายน 2556 00.01 </date>
+    <Richter>3.1</Richter>
+  </marker>
+  <marker id="8">
+    <name>เชียงใหม่</name>
+    <latitude>18.64</latitude>
+    <longitude>98.72</longitude>
+    <date>5 เมษายน 2556 23.20 </date>
+    <Richter>2.9</Richter>
+  </marker>
+  <marker id="9">
+    <name>ลำปาง</name>
+    <latitude>18.36</latitude>
+    <longitude>99.56</longitude>
+    <date>2 มีนาคม 2556 20.35 </date>
+    <Richter>3.4</Richter>
+  </marker>
+  <marker id="10">
+    <name>เชียงราย</name>
+    <latitude>19.75</latitude>
+    <longitude>99.82</longitude>
+    <date>13 กันยายน 2555 01.55 </date>
+    <Richter>3.4</Richter>
+  </marker>
+  <marker id="11">
+    <name>ระนอง</name>
+    <latitude>9.84</latitude>
+    <longitude>98.58</longitude>
+    <date>4 มิถุนายน 2555 12.49 </date>
+    <Richter>4.0</Richter>
+  </marker>
+  <marker id="12">
+    <name>ภูเก็ต</name>
+    <latitude>8.02</latitude>
+    <longitude>98.37</longitude>
+    <date>16 เมษายน 2555 16.44 </date>
+    <Richter>4.3</Richter>
+  </marker>
+  <marker id="13">
+    <name>พังงา</name>
+    <latitude>8.25</latitude>
+    <longitude>98.50</longitude>
+    <date>20 กุภาพนธ์ 2555 03.48 </date>
+    <Richter>2.7</Richter>
+  </marker>
+  <marker id="14">
+    <name>ตรัง</name>
+    <latitude>7.38</latitude>
+    <longitude>99.63</longitude>
+    <date>24 มิถุนายน 2554 23.42 </date>
+    <Richter>3.5</Richter>
+  </marker>
+  <marker id="15">
+    <name>เชียงราย</name>
+    <latitude>19.94</latitude>
+    <longitude>99.95</longitude>
+    <date>5 เมษายน 2553 06.42 </date>
+    <Richter>3.5</Richter>
+  </marker>
+  <marker id="16">
+    <name>สุราษฏร์ธานี</name>
+    <latitude>8.65</latitude>
+    <longitude>98.99</longitude>
+    <date>23 ธันาคม 2551 13.38 </date>
+    <Richter>4.1</Richter>
+  </marker>
+  <marker id="17">
+    <name>เชียงใหม่</name>
+    <latitude>19.26</latitude>
+    <longitude>99.24</longitude>
+    <date>1 กรกฏาคม 2551 16.45 </date>
+    <Richter>3.8</Richter>
+  </marker>
+  <marker id="18">
+    <name>เชียงใหม่</name>
+    <latitude>18.89</latitude>
+    <longitude>98.97</longitude>
+    <date>22 เมษายน 2551 02.31 </date>
+    <Richter>3.9</Richter>
+  </marker>
+  <marker id="19">
+    <name>เชียงใหม่</name>
+    <latitude>18.9</latitude>
+    <longitude>99.0</longitude>
+    <date>19 มิถุนายน 2550 12.06 </date>
+    <Richter>4.5</Richter>
+  </marker>
+  <marker id="20">
+    <name>เชียงราย</name>
+    <latitude>19.40</latitude>
+    <longitude>99.36</longitude>
+    <date>22 เมษายน 2550 13.18 </date>
+    <Richter>4.5</Richter>
+  </marker>
+  <marker id="21">
+    <name>เชียงใหม่</name>
+    <latitude>18.9</latitude>
+    <longitude>99.0</longitude>
+    <date>6 มกราคม 2550 18.51 </date>
+    <Richter>3.1</Richter>
+  </marker>
+  <marker id="22">
+    <name>เชียงใหม่</name>
+    <latitude>19.0</latitude>
+    <longitude>99.0</longitude>
+    <date>23 ธันวาคม 2549 18.51 </date>
+    <Richter>3.6</Richter>
+  </marker>
+  <marker id="23">
+    <name>แม่ฮ่องสอน</name>
+    <latitude>19.3</latitude>
+    <longitude>98.1</longitude>
+    <date>22 ธันวาคม 2549 22.59 </date>
+    <Richter>3.3</Richter>
+  </marker>
+  <marker id="24">
+    <name>เชียงใหม่</name>
+    <latitude>19.0</latitude>
+    <longitude>99.0</longitude>
+    <date>22 ธันวาคม 2549 16.41 </date>
+    <Richter>2.2</Richter>
+  </marker>
+  <marker id="25">
+    <name>เชียงใหม่</name>
+    <latitude>19.02</latitude>
+    <longitude>99.08</longitude>
+    <date>19 ธันวาคม 2549 07.03 </date>
+    <Richter>2.7</Richter>
+  </marker>
+  <marker id="26">
+    <name>เชียงใหม่</name>
+    <latitude>18.93</latitude>
+    <longitude>98.97</longitude>
+    <date>13 ธันวาคม 2549 00.03 </date>
+    <Richter>5.1</Richter>
+  </marker>
+  <marker id="27">
+    <name>เชียงราย</name>
+    <latitude>19.50</latitude>
+    <longitude>99.60</longitude>
+    <date>17 พฤศจิกายน 2549 01.39 </date>
+    <Richter>4.4</Richter>
+  </marker>
+  <marker id="28">
+    <name>เชียงใหม่</name>
+    <latitude>19.15</latitude>
+    <longitude>98.92</longitude>
+    <date>6 สิงหาคม 2549 12.15 </date>
+    <Richter>3.4</Richter>
+  </marker>
+  <marker id="29">
+    <name>เชียงใหม่</name>
+    <latitude>18.80</latitude>
+    <longitude>98.80</longitude>
+    <date>13 กรกฏาคม 2549 07.28 </date>
+    <Richter>3.0</Richter>
+  </marker>
+  <marker id="30">
+    <name>เชียงใหม่</name>
+    <latitude>19.02</latitude>
+    <longitude>99.08</longitude>
+    <date>16 มีนาคม 2549 20.34 </date>
+    <Richter>3.0</Richter>
+  </marker>
+  <marker id="31">
+    <name>เชียงราย</name>
+    <latitude>19.43</latitude>
+    <longitude>99.96</longitude>
+    <date>16 ธันวาคม 2548 09.13 </date>
+    <Richter>3.8</Richter>
+  </marker>
+  <marker id="32">
+    <name>เชียงราย</name>
+    <latitude>19.43</latitude>
+    <longitude>100.18</longitude>
+    <date>15 ธันวาคม 2548 13.48 </date>
+    <Richter>4.1</Richter>
+  </marker>
+  <marker id="33">
+    <name>เชียงราย</name>
+    <latitude>19.70</latitude>
+    <longitude>99.60</longitude>
+    <date>7 ธันวาคม 2548 16.02 </date>
+    <Richter>3.9</Richter>
+  </marker>
+  <marker id="34">
+    <name>เชียงใหม่</name>
+    <latitude>18.70</latitude>
+    <longitude>98.50</longitude>
+    <date>4 ธันวาคม 2548 16.34 </date>
+    <Richter>4.1</Richter>
+  </marker>
+  <marker id="35">
+    <name>ลำพูล</name>
+    <latitude>17.8</latitude>
+    <longitude>99.0</longitude>
+    <date>5 มิถุนายน 2548 08.53 </date>
+    <Richter>3.0</Richter>
+  </marker>
+   <marker id="36">
+    <name>อุตรดิตถ์</name>
+    <latitude>17.8</latitude>
+    <longitude>100.60</longitude>
+    <date>5 มิถุนายน 2548 06.17 </date>
+    <Richter>2.8</Richter>
+  </marker>
+  <marker id="37">
+    <name>เชียงใหม่</name>
+    <latitude>18.70</latitude>
+    <longitude>98.70</longitude>
+    <date>11 กันยายน 2547 08.30 </date>
+    <Richter>3.7</Richter>
+  </marker>
+  <marker id="38">
+    <name>เชียงใหม่</name>
+    <latitude>18.70</latitude>
+    <longitude>99.00</longitude>
+    <date>30 พฤษภาคม 2547 23.53 </date>
+    <Richter>2.0</Richter>
+  </marker>
+   <marker id="39">
+    <name>เชียงราย</name>
+    <latitude>19.79</latitude>
+    <longitude>99.75</longitude>
+    <date>6 เมษายน 2547 11.49 </date>
+    <Richter>3.1</Richter>
+  </marker>
+   <marker id="40">
+    <name>เชียงราย</name>
+    <latitude>19.43</latitude>
+    <longitude>99.46</longitude>
+    <date>27 มีนาคม 2547 11.05 </date>
+    <Richter>3.4</Richter>
+  </marker>
+   <marker id="41">
+    <name>เชียงใหม่</name>
+    <latitude>18.90</latitude>
+    <longitude>99.00</longitude>
+    <date>3 กุภาพันธ์ 2547 00.58 </date>
+    <Richter>1.9</Richter>
+  </marker>
+</markers>
